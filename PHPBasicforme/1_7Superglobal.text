@@ -1,0 +1,9 @@
+Variable Superglobal
+
+$GLOBALS  ເປັນການເກັບຄ່າທີ່ທຸກສ່ວນເອີ້ນໃຊ້ໄດ້
+$_SERVER  ເກັບຄ່າຕ່າງໆຂອງ Web server
+$_GET     ເປັນຕົວແປ Array ໃຊ້ເກັບຄ່າທີ່ສົ່ງມາກັບ URL
+$_POST    ໃຊ້ເກັບຄ່າທີ່ສົ່ງມາກັບ Form ແບບ post method
+$ENV      ຕົວແປທີ່ເກັບສະພາບແວດລ້ວມທົ່ວໄປຂອງ server
+$_SESSION ຕົວແປເກັບ session
+$_COOKIE   ເກັບຕົວແປ cookie

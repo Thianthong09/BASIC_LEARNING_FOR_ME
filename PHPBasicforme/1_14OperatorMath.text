@@ -1,0 +1,18 @@
+&&              AND
+||              OR
+!               NOT
+
+
+Not
+a           !a
+True        False 
+False       True 
+
+
+
+And             Or
+a               b               a&&b                a||b 
+FALSE           FALSE           FALSE               FALSE
+FALSE           TRUE            FALSE               TRUE
+TRUE            FALSE           FALSE               TRUE
+TRUE            TRUE            TRUE                TRUE

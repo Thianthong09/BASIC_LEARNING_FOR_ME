@@ -1,10 +1,4 @@
-# Data Types And Operators
-# Welcome to this lesson on Data Types and Oerators! You'll learn about:
-# - Data Types: Inegers, Floats, Booleans, strings
 # - Operators: Arithmetic, Assignment, Comparison, Logical
-# - Built-In Functions, Type Conversion
-# - Whitespace and Style Guidelines
-
 #------------------------------------------------
 # Arithmetic Operators
 # - + Addition

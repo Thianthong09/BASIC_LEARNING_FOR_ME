@@ -1,0 +1,111 @@
+<!-- HTML FORM 
+ການພັດທະນາເວັບ Application ຈຳເປັນຕ້ອງມີການສ້າງແບບຟອມທີ່ຜູ້ໃຊ້ງານສາມາດ
+ປ້ອນຂໍ້ມູນຕ່າງໆໄດ້ ເພື່ອນຳຂໍ້ມູນທີ່ປ້ອນນັ້ນໄປທຳການປະມວນຜົນອີກເທື່ອໝຶ່ງໂດຍການຮັບຄ່າ
+ຂໍ້ມູນຈະດຳເນີນການຜ່ານ <form action=""></form>
+
+Tag                                                        ຄຳອະທິບາຍ 
+<input type="text">                                         ສ້າງຊ່ອງຮັບຂໍ້ຄວາມຕ່າງໆ
+<select name="" id=""></select>                             ສະແດງຕົວເລືອກໃນຮູບແບບ Drop-down 
+<option value=""></option>                                  ສ້າງຕົວເລືອກ
+<button></button>                                           ສ້າງປຸ່ມ
+<label for=""></label>                                      ກຳນົດປ້າຍຊື່ໃຫ້ຊ່ອງຮັບຂໍ້ມູນ
+<textarea name="" id="" cols="30" rows="10"></textarea>     ສ້າງຊ່ອງຮັບຂໍ້ຄວາມແບບຫຼາຍບັນທັດ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ລົງທະບຽນ</title>
+</head>
+<body>
+    <h1>ແບບຟອມການລົງທະບຽນ</h1>
+    <form>
+        <div>
+            <label for="Firstname">ຊື່</label>
+            <input type="text" name="fname" placeholder="ປ້ອນຊື່ຂອງເຈົ້າ" required> <!-- value ຄຶການກຳນົດຄ່າໃຫ້ມັນເລີຍ-->
+        </div>
+        <div>
+            <label for="lastname">ນາມສະກຸນ</label>
+            <input type="text" name="lname" placeholder="ປ້ອນນາມສະກຸນຂອງເຈົ້າ" required> <!--required ບັງຄັບໃຫ້ໃສ່ຂໍ້ມູນ-->
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="">ທີ່ຢູ່</label>
+            <textarea name="" id="" cols="20" rows="5">
+                ນ້ອຍ
+            </textarea>
+        </div>
+        <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="Age">Age</label>
+            <input type="number" name="age" min="0" max="100" value="2" readonly> <!--readonly ຄືການໃຫ້ອ່ານຢ່າງດຽວ-->
+        </div>
+        <div>
+            <label for="date">ວັນເກີດ</label>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <label for="Mobile">MobilePhone</label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="date">color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="number">Number</label>
+            <input type="range" name="rangenumber" value="50">
+        </div>
+        
+        <div>
+            <label for="learn">ລະດັບການສືກສາ</label> <!--ການໃຊ້ select option-->
+            <select name="Edu" id="">
+                <option value="ຊັ້ນສູງ">ຊັ້ນສູງ</option>
+                <option value="ປະລິຍາຕີ" selected>ປະລິຍາຕີ</option> <!--selected ເຮັດໃຫ້ເປັນຕົວເລືອກທຳອີດ-->
+            </select>
+        </div>
+
+        <div>
+            <label for="learn">ເພດຂອງທ່ານ</label>
+            <input type="radio" name="gender"> ເພດຊາຍ
+            <input type="radio" name="gender"> ເພດຍິງ
+            <input type="radio" name="gender"> ກຳນົດເອງ
+        </div>
+
+        <div>
+            <label for="favorite">ສິ່ງທີ່ມັກ</label> <br>
+            <input type="checkbox" name="favorite"> ຂຽນເວັບ <br>
+            <input type="checkbox" name="favorite"> ສ້າງເກມ  <br>
+            <input type="checkbox" name="favorite"> ສ້ງ Application <br>
+            <input type="checkbox" name="favorite"> ແປງຄອມ <br>
+            <input type="checkbox" name="favorite"> ອື່ນໆ <br>
+        </div>
+
+        <div>
+            <label for="favorite">ແນບໄຟລ໌</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <label for="favorite">ແນບເວັບໄຊ</label> <br>
+            <input type="url">
+        </div>
+
+        <div>
+            <button type="submit">ບັນທຶກຂໍ້ມູນ</button>
+            <input type="reset" value="ລ້າງຂໍ້ມູນ">
+        </div>
+    </form>
+</body>
+</html>

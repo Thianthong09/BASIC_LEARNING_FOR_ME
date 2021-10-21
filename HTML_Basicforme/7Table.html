@@ -1,0 +1,73 @@
+<!-- ການສ້າງ Table 
+<table></table> ໃຊ້ກຳນົດສຳລັບສ້າງຕາຕະລາງ
+<thead></thead> ໃຊ້ກຳນົດກຸ່ມເນື້ອໃນສ່ວນຫົວຕາຕະລາງ
+<tbody></tbody> ໃຊ້ກຳນົດກຸ່ມເນື້ອໃນຕາຕະລາງ
+<tfoot></tfoot> ໃຊ້ກຳນົດກຸ່ມເນື້ອໃນລຸ່ມຕາຕະລາງ
+<tr></tr> ໃຊ້ກຳນົດແຖວໃນຕາຕະລາງ
+<td></td> ກຳນົດ Column
+<th></th> ກຳນົດ Column ທີ່ສະແດງໃນສ່ວນຫົວຂອງຕາຕະລາງ 
+
+__________________________________________________
+
+Attribute Table
+- border="ຄວາມໜາ" ກຳນົດເສັ້ນຂອບ ແລະ ຄວາມໜາຂອງເສັ້ນຂອບຕາຕະລາງ ຄ່າເລີ່ມຕົ້ນ = 0
+- width="%" ກຳນົດຄວາມກວ້າງ ໝ່ວຍເປັນ %
+- bgcolor="ສີ" ກຳນົດສີພື້ນຫຼັງຂອງຕາຕະລາງ
+- <table bgcolor="ສີ"> ກຳນົດສີທັງ Row and Column
+- <tr bgcolor="ສີ"> ສີຂອງ Row
+- <td bgcolor="ສີ"> ສີຂອງ column 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>ລາຍການ</h1>
+    <table border="1">
+        <th>ລະຫັດສິນຄ້າ</th>
+
+        <th>ພາບສິນຄ້າ</th>
+
+        <th>ຊື່ສິນຄ້າ</th>
+
+        <th>ລາຄາ</th>
+
+        <th>ດຳເນີນການ</th>
+
+        <tbody>
+            <tr>
+                <td>N001</td>
+
+                <td><img src="https://media.istockphoto.com/photos/among-the-lilypads-picture-id1303894655?s=612x612" alt="" width="150px" height="150px"></td>
+                
+                <td> ອື່ນໆ</td>
+
+                <td>20ພັນ</td>
+
+                <td><a href="#">ສັ່ງຊື້</a></td>
+
+            </tr>
+            <tr>
+                <td>N002</td>
+
+                <td><img src="https://cdn.pixabay.com/photo/2020/12/03/14/35/horror-5800684_960_720.jpg" alt="" width="150px" height="150px"></td>
+                
+                <td> ອື່ນໆ2</td>
+                
+                <td>15ພັນ</td>
+
+                <td><a href="#">ສັ່ງຊື້</a></td>
+
+            </tr>
+            <tr>
+                <td>ລາຄາລວມ: 35ພັນ</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

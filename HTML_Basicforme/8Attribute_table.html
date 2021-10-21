@@ -1,0 +1,64 @@
+<!-- Attribute Table
+- border="ຄວາມໜາ" ກຳນົດເສັ້ນຂອບ ແລະ ຄວາມໜາຂອງເສັ້ນຂອບຕາຕະລາງ ຄ່າເລີ່ມຕົ້ນ = 0
+- width="%" ກຳນົດຄວາມກວ້າງ ໝ່ວຍເປັນ %
+- bgcolor="ສີ" ກຳນົດສີພື້ນຫຼັງຂອງຕາຕະລາງ
+- <table bgcolor="ສີ"> ກຳນົດສີທັງ Row and Column
+- <tr bgcolor="ສີ"> ສີຂອງ Row
+- <td bgcolor="ສີ"> ສີຂອງ column 
+
+_____________________________________________________________________________
+
+Attribute Row column
+- cospan="x" (ຄໍສແປ໋ນ) :   ລວມ column ຄ່າ x ຄືຈຳນວນ column ທີ່ຕ້ອງການລວມເຂົ້າກັນ (ຊ່ອງ <td>)
+- rowspan="x" (ໂລສແປ໋ນ) :   ລວມ Row ຄ່າ x ຄືຈຳນວນ Row ທີ່ຕ້ອງການລວມເຂົ້າກັນ
+- align="left,   center, right"  :   ຈັດຕຳແໜ່ງຂອງພາບ ຫຼື ຕົວໜັງສືພາຍໃນຊ່ອງຕາຕະລາງ <td> 
+    ຄ່າປົກກະຕິຄື left
+- cellpadding  : ສະແດງຂໍ້ມູນໃນຕາຕະລາງ ຫາກມີຄ່າຫຼາຍກໍ່ຈະມີພື້ນທີ່ການສະແດງຜົນເປັນວ່າງຫຼາຍຂື້ນ
+    ໂດຍມີຄ່າເລີ່ມຕົ້ນເປັນ 0 (ໜ່ວຍ Pixel)
+- cellspacing  : ກຳນົດຂະໜາດເສັ້ນຕາຕະລາງ ຫາກມີຄ່າຫຼາຍຂື້ນເສັ້ນຕາຕະລາງກໍ່ ຈະມີຂະໜາດຫຼາຍຕາມໄປ
+    ໂດຍມີຄ່າເລີ່່ມຕົ້ນເປັນ 0 (ໜ່ວຍ Pixel)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+    <h1>Hi</h1>
+<body>
+    <table border="2" cellpadding="10" cellspacing="50">
+
+        <th>ໄອດີ</th>
+        <th>ຮູບ</th>
+        <th>ຊື່</th>
+        <th>ລາຄາ</th>
+        <th>ດຳເນີນການ</th>
+
+        <tbody align="center">
+            <tr bgcolor="blue">
+                <td>N01</td>
+                <td><img src="https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_960_720.png" alt="" width="100px" height="100px"></td>
+                <td>ບາໆ</td>
+                <td>10.000</td>
+                <td>continue</td>
+            </tr>
+            <tr><td>N01</td>
+                <td><img src="https://cdn.pixabay.com/photo/2016/12/30/19/33/children-1941336_960_720.png" alt="" width="100px" height="100px"></td>
+                <td>ບາໆ</td>
+                <td>10.000</td>
+                <td>continue</td></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr">
+               <td colspan="8">ລາຄາລວມ</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

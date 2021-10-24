@@ -1,0 +1,163 @@
+<!-- Semantic tag
+ຖືກນຳມາໃຊ້ແທນ div ຫຼາຍໆຊັ້ນໃນໜ້າເວັບຈະສົ່ງຜົນເຮັດໃຫ້ໂຄງສ້າງ html ມີຄວາມໝາຍຕົງຕົວຊັດເຈນຫຼາຍຂື້ນ 
+
+<header>
+    ຄື ສ່ວນຫົວຂອງເວັບ
+    <nav>
+        ຄື ສ່ວນເມນູຂອງເວັບ ຫຼື ລິ້ງໄປເວັບອື່ນໆ
+        <article>
+            ຄື ສ່ວນເນື້ອໃນຂອງເວັບໄຊ
+            <section>
+                ຄື ກູ່ມຫົວຂໍ້ຍ່ອຍ
+                <aside>
+                    ຄື ເນື້ອໃນອື່ນໆທີ່ແຍກອອກຈາກເນື້ອໃນຫຼັກ
+                    <footer>
+                        ຄື ສ່ວນທ້າຍຂອງໜ້າເວັບ
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML5 Semantic</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="card">
+      <h1>HEADER</h1>
+      <p>TH1AN</p>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+      <!-- Welcome Section -->
+      <section id="welcome" class="card">
+        <h2>ຍິນດີຕ້ອນຮັບສູ່ເວັບໄຊ</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          cupiditate itaque possimus numquam corporis odit deserunt voluptas
+          repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+          temporibus! Sed. <br />
+          <a href="#" class="text-center">Facebook</a>
+          <a href="#" class="text-center">Youtube</a>
+        </p>
+    </section>
+      <!-- Blog Section -->
+      <section id="blog">
+        <h2>ບົດຄວາມ</h2>
+        <!-- Article One -->
+        <article class="article">
+          <h3>ທ່ອງທ່ຽວ</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+            sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+            <a href="#">Click</a>
+          </p>
+        </article>
+        <hr>
+        <!-- Article Two -->
+        <div class="article">
+          <h3>ຮ້ານອາຫານ</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+            sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+            <a href="#">Click</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sidebar-->
+    <aside id="sidebar" class="card">
+      <h3>ເມນູ</h3>
+      <!-- Navigation -->
+      <ul id="main-nav">
+        <li><a href="#">ໜ້າທຳອິດ</a></li>
+        <li><a href="#">ກ່ຽວກັບເຮົາ</a></li>
+        <li><a href="#">ງານຂອງເຮົາ</a></li>
+      </ul>
+      <hr />
+      <h3>ຕິດຕໍ່ງານ</h3>
+      <ul>
+        <li><strong>ທີ່ຢູ່:</strong> LPB</li>
+        <li><strong>ເບີໂທລະສັບ:</strong> (+856) 20-7864-3395</li>
+        <li><strong>ອີເມລ:</strong> Thianthong0904@gmail.com</li>
+      </ul>
+    </aside>
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; TH1AN</p>
+    </footer>
+  </body>
+</html>

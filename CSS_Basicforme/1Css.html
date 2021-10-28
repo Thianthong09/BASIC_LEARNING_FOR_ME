@@ -1,0 +1,38 @@
+<!-- ການປະກາດ Selectors -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascadding style sheets</title>
+    <style>
+        h1{
+            color: red;
+            font-size: 50px;
+        }
+         .title{  /*ການເຂົ້າເຖິງ ໃສ່ຈຸດ. class title--> */
+            color: green;
+        }
+        #title{ /*ການເຂົ້າເຖິງ ໃສ່ຈຸດ # id title--> */
+            color: blue;
+        }
+        #title,.title{  /* Union selector */
+            font-style: italic;
+        }
+
+        p.message{  /* Tag class selector  ປ່ຽນສະເພາະ tag p*/ 
+            font-size: 111px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>THIAN</h1>
+    <h1 class="title">HTML 5</h1>
+    <h1 id="title">CSS3</h1>
+    <p class="message">Hi</p>
+    <h1 class="message">Hi2</h1>
+</body>
+</html>

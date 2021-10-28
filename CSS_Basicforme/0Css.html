@@ -1,0 +1,92 @@
+<!--
+    CSS ຫຍໍ້ມາຈາກ Cascading Style Sheets
+ເປັນເທັກໂນໂລຍີທີ່ນຳມາໃຊ້ຈັດຮູບແບບ ແລະ ຄວບຄຸມການສະແດງຜົນຂອງເວັບໄຊ
+ເຊັ່ນ ການກຳນົດຂະໜາດ, ສີ, ແບບໜັງສື, ເສັ້ນຂອບ, ພື້ນຫຼັງ ແລະ ຕຳແໜ່ງຂອງຂໍ້ຄວາມ
+ຮູບພາບເປັນຕົ້ນ
+-------
+
+ໂຄງສ້າງຂອງ Cascading Style Sheets
+ມີສ່ວນປະກອບຢູ່ 2 ສ່ວນຄື: Selector and Declaration
+- Selector is Tag HTML, ID and Class ທີ່ຕ້ອງກຳນົດ
+- Declaration ໃຊ້ສຳລັບກຳນົດຄ່າໃຫ້ກັບ selector 
+-------
+
+ໂຄງສ້າງຂອງ Cascading Style Sheets
+Selector(ແທັກອ້າງອີງ){
+    Declaration(ຄຸນສົມບັດ)
+}
+-------
+
+Selector is Tag HTML, ID and Class ທີ່ຕ້ອງກຳນົດຄຸນສົມບັດ ແບ່ງອອກເປັນ3ແບບ
+- Element Selector ຄືການກຳນົດ style ໃຫ້ແທັກ HTML ໂດຍຕົງ
+- Class Selector ຄືການກຳນົດ style ໂດຍໃຊ້ຊື່ Class ເປັນ selector ໂດຍໃຊ້ເຄື່ອງໝາຍຈຸດ . (ສາມາດມີຄ່າຊ້ຳກັນໄດ້)
+- ID Selector ຄືການກຳນົດ style ໂດຍລະບຸຊື່ ID ເປັນລະຫັດສະເພາະຂອງແທັກຫຼັງເຄື່ອງໝາຍ# ໂດຍID (ບໍ່ສາມາດຊ້ຳຄ່າກັນໄດ້)
+-------
+
+Declaration ໃຊ້ສຳລັບກຳນົດຄ່າໃຫ້ກັບ selector ປະກອບມີສອງສ່ວນຄື:
+- Property OR Attribute ຄືຄຸນສົມບັດທີ່ຕ້ອງການກຳນົດໃຫ້ກັບ selector
+- Value ຄືຄ່າທີ່ກຳນົດໃຫ້ກັບ Property OR Attribute
+-------
+
+ການກຳນົດສ່ວນຂອງ property And value ຈະແຍກດ້ວຍເຄື່ອງໝາຍ colon(:) ຖ້າມີຫຼາຍກວ່າ 1 property
+ຈະຕ້ອງແຍກດ້ວຍເຄື່ອງໝາຍ semi-colon(;) ໂດຍມີຮູບແບບດັ່ງນີ້
+
+selector { property : value; property: value ...}
+-------
+TAG selector
+<p>THIAN</p>
+p{
+    color:red;
+    text-align:center;
+    padding:10px;
+}
+-------
+
+Class selector
+<h2 class="title">Thian</h2>
+<p class="title">ONCHAN</p>
+
+.title{
+    color:red;
+    text-align:center;
+    padding:20px;
+}
+-------
+
+Id selector
+<h2 id="title">Thian</h2>
+<p id="title">ONCHAN</p>
+
+#title{
+    color:red;
+    text-align:center;
+    padding:20px;
+}
+-------
+Union selector
+
+<div id="box">
+    <h2 class="title">THIAN</h2>
+    <p id="message">ONCHAN</p>
+</div>
+
+.title, #message, #box{
+    color:green;
+    text-align:center;
+    font-size:20px;
+}
+
+-------
+Tag class selector
+
+<p class="error">THIAN</p>
+<p class="success">ONCHAN</p>
+
+p.error{
+    color:red;
+}
+p.success{
+    color:green;
+}
+
+-->

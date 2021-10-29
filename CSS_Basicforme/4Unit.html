@@ -1,0 +1,122 @@
+<!-- 
+ໜ່ວຍ (Unit) ໃນ CSS (Absolute ແອັດສລຸດ) ແບບຕາຍຕົວ
+
+px | pixel ເປັນໜ່ວຍທີ່ນິຍົມໃຊ້ຫຼາຍທີ່ສຸດ ໂດຍ 1px = 0.75pt ກ່ຽວກັບກັບລາຍລະອຽດໜ້າຈໍ
+pt | point ໂດຍ 1pt = 1/72 inchs ໃຊ້ໃນງານພິມ 
+cm | centimetre
+mm | millimetre
+in | inches (1 in = 96px = 2.54cm) 
+pc | picas (1pc = 12pt) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute and Relative</title>
+    <style>
+        p {
+            font-size: 24px;
+        }
+        
+        .message {
+            font-size: 2pc;
+        }
+    </style>
+</head>
+
+<body>
+    <p>CSS3</p>
+    <p class="message">Lorem ipsum dolor sit amet.</p>
+    <p>_________________________________________________</p>
+</body>
+
+</html>
+
+
+
+<!--
+
+ໜ່ວຍ (Unit) ໃນ CSS (Relative) ແບບອັດຕາສ່ວນ
+
+  % ເປັນການກຳນົດຂະໜາດເປັນ % ມັກໃຊ້ກັບຄວາມກວ້າງ ຫຼື ສູງ
+
+ em   | ອ້າງອີງຂະໜາດກັບ element parent ທີ່ໃກ້ທີ່ສຸດ ໃຊ້ໃນການກຳນົດຂະໜາດຈຳນວນເທົ່າຂອງຂະໜາດປັດຈຸບັນເຊັ່ນ: ຫາກຂະນາດທີ່ໃຊ້ຕອນນີ້ຄື 10px
+    - ຖ້າກຳນົດຂະໜາດເປັນ 2em ຈະໝາຍເຖິງ 2 ເທົ່າຂອງຂະໜາດປັດຈຸບັນ ຄື 20px
+    - ຖ້າກຳນົດຂະໜາດເປັນ 1.4em ຈະໝາຍເຖິງ 1.4 ເທົ່າກັບຂອງຂະໜາດປັດຈຸບັນ ຄື 14px
+    - ຖ້າກຳນົດເປັນຂະໜາດຄືເກົ່າກໍ່ຈະກຳນົດເປັນ 1em = 10px
+
+ rem | ກຳນົດຂະໜາດໂດຍອ້າງອີງກັບ root element ປົກກະຕິ font-size ຈະຢູ່ທີ່ 16px
+
+ vw  | 1% ຫຼື 1/100 ຂອງ viewport
+    - width ຂອງ browser viewport ເທົ່າກັບ 750px ຄ່າ 1vw = 7.5px
+
+ vh  | 1% ຫຼື 1/100 ຂອງ viewport
+    - height ຂອງ browser viewport ເທົ່າກັບ 900px ຄ່າ 1vh = 9px
+
+ vmin, vmax | ກຳນົດຄ່າຕ່ຳສຸດ ແລະ ຄ່າສູງສຸດຂອງ viewport -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            font-size: 100%;
+        }
+        html {
+            font-size: 20px;
+            /* ກຳນົດfont-sizeໃຫ້ html
+        }
+        div {
+            font-size: 2rem; 2 ເທົ່າ
+            /* ກຳນົດ div 20px ໄປ*2 
+        } */
+        
+        body {
+            font-size: 10px;
+        }
+        
+        div {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>Hello world</p>
+    <div>CSS3</div>
+    <div>CSS3</div>
+    <div>CSS3</div>
+    <div>CSS3</div> -->
+
+    <div>
+        Test1
+        <!-- (10 X 2 = 20px) -->
+        <div>
+            Test2
+            <!-- (20 X 2 = 40px) -->
+            <div>
+                Test3
+                <!--  (40 X 2 = 80px) -->
+                <div>
+                    Test4
+                    <!--  (80 X 2 = 160px) -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="font-size: 160px;">Thian</p>
+    <!-- ປຽບທຽບ Test 4 -->
+
+</body>
+
+</html>

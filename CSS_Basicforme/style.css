@@ -1,9 +1,19 @@
-p#message{
+p#message {
     color: yellow;
 }
-h1.title{
+
+h1.title {
     color: blue;
 }
-h1.ti{
+
+h1.ti {
     color: brown;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap');
+* {
+    font-family: 'Noto Sans Lao', sans-serif;
+    color: blue;
+    font-size: x-large;
+    font-weight: bold;
 }

@@ -1,0 +1,64 @@
+<!-- ກຳນົດຄວາມສູງແລະຄວາມກວ້າງ
+
+ Width ໃຊ້ກຳນົດຄວາມກວ້າງຂອງວັດຖຸທີ່ຕ້ອງການ
+
+- auto ຄື browser ຈະກຳນົດໃຫ້ເອງ
+- length ຄື ຄວາມກວ້າງແບບໜ່ວຍວັດ ເຊັ່ນ: px cm ເປັນຕົ້ນ
+- % ຄື ຄວາມກວາ້ງແບບ % (ແບບຍືດຫຍຸ່ນ)
+
+
+Height ໃຊ້ກຳນົດຄວາມສູງຂອງວັດຖຸທີ່ຕ້ອງການ
+
+- auto ຄື browser ຈະກຳນົດໃຫ້ເອງ
+- length ຄື ຄວາມກວ້າງແບບໜ່ວຍວັດ ເຊັ່ນ: px cm ເປັນຕົ້ນ 
+- % ຄື ຄວາມກວາ້ງແບບ % (ແບບຍືດຫຍຸ່ນ)
+
+_______________________________________________________
+
+ຄວາມກວ້າງ ແລະ ຄວາມສຸງໂດຍ max, min
+- width-min ໃຊ້ກຳນົດຄວາມກວາ້ງຕ່ຳສຸດຂອງວັດຖຸ
+- width-max ໃຊ້ກຳນົດຄວາມກວ້າງສູງສຸດຂອງວັດຖຸ
+- heght-min ໃຊ້ກຳນົດຄວາມສູງຕ່ຳສຸດຂອງວັດຖຸ
+- heght-max ໃຊ້ກຳນົດຄວາມສູງ ສູງສຸດຂອງວັດຖຸ
+
+ໜ່ວຍທີ່ຮອງຮັບ
+- none ບໍ່ກຳນົດ (default)
+- length ຄື ກຳນົດແບບໜ່ວຍວັດ ເຊັ່ນ: px cm ເປັນຕົ້ນ
+- % ຄື ກຳນົດແບບ % (ແບບຍືດຫຍຸ່ນ)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width Height</title>
+    <style>
+        div {
+            background-color: aqua;
+            max-width: 400px;
+            min-width: 400px;
+            height: 100cm;
+        }
+        
+        img {
+            width: auto;
+            height: auto;
+        }
+        
+        button {
+            height: auto;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <img src="https://images.unsplash.com/photo-1635547620248-c51c2a0a567e?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+    <button>OK</button>
+</body>
+
+</html>

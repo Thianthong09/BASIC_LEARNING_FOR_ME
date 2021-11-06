@@ -4,6 +4,26 @@ border: <ຮູບແບບເສັ້ນ> <ຂະໜາດ> <ສີ>
 ຮູບແບບເສັ້ນ ປະກອບດ້ວຍ solid(ເສັ້ນທືບ), dotted(ແບບຈຸດ), dashed(ເສັ້ນຂີດ)
 ຂະໜາດ ຄື ຄວາມກວ້າງຂອງເສັ້ນກຳນົດເປັນຕົວເລກຕາມໜ່ວຍ
 ສີ ກຳນົດຮູບແບບຄື font ເລີຍ ເຊັ່ນ: ຊື່ສີ, rgb, hex 
+______________________________________________________________________
+ການກຳນົດຮູບແບບເສັ້ນຂອບ
+Border ຄືການນຳນົດເສັ້ນຂອບ ໂດຍມີຮູບແບບດັ່ງນີ້:
+border-style <ຮູບແບບເສັ້ນ>
+ຮູບແບບເສັ້ນ ປະກອບດ້ວຍ solid(ເສັ້ນທືບ), dotted(ແບບຈຸດ), dashed(ເສັ້ນຂີດ)
+
+border-xxx-style <ຮູບແບບເສັ້ນ>
+xxx ຄື ທິດທາງຂອງຮູບແບບເສັ້ນຂອບ
+
+______________________________________________________________________
+ຄ່າຄົງທີ່ຂອງເສັ້ນຂອບ border-width 
+ຂອບປານກາງ - medium 
+ຂອບບາງ - thin
+ຂອບໜາ - thick
+ຄ່າເລີ່ມຕົ້ນ - initial 
+ອ້າງອີງຕາມ parent element - inherit
+______________________________________________________________________
+Radius ກຳນົດຄວາມໂຄ້ງ
+border-xxx-style
+xxx ຄື ທິດທາງຂອງຮູບແບບເສັ້ນຂອບ
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +38,19 @@ border: <ຮູບແບບເສັ້ນ> <ຂະໜາດ> <ສີ>
         height: 100px;
     }
     .box-1{
-        background-color: black;
-        border: solid 10px black;
-    } 
+        background-color: white;
+        border-color: black;
+        border-style: solid;
+        border-width: medium;
+    }
     .box-2{
         background-color: burlywood;
         border: dotted 5px black;
+        border-top-color: seagreen;
     } 
     .box-3{
         background-color: red;
-        border: dashed 5px red;
+        border-color: rgb(rgb(0, 255, 221), rgb(128, 62, 0), rgb(0, 255, 149));
     } 
     .box-4{
         background-color: green;
@@ -42,3 +65,4 @@ border: <ຮູບແບບເສັ້ນ> <ຂະໜາດ> <ສີ>
     <div class="box-4"></div><hr>
 </body>
 </html>
+

@@ -1,0 +1,98 @@
+ກຳນົດສີພື້ນຫຼັງ Background
+background-color ຊ້ປ່ຽນສີພື້ນຫຼັງ ຫຼື ກຳນົດຄວາມໂປ່ງໃສໃຫ້ກັບພື້ນຫຼັງ ແລະ Element ຕ່າງໆ
+background-color: <color> | transparent (ເທນເພເລນ)
+_____________________________________________________________________
+
+background-image ໃຊ້ປ່ຽນຮູບພາບເປັນພື້ນຫຼັງ
+background-image: url()
+Example:
+url('image.png') Folder
+url('https://www.png') 
+
+_____________________________________________________________________
+background-repeat 
+background-image:rul(xxx);
+background-repeat:xxx;
+
+repeat ( ຄ່າ default ເຮັດໃຫ້ພາບເຕັມພື້ນທີ່ຂອງ Element)
+repeat-x (ຈັດລຽງສະເພາະໃນແນວແກນ x )
+repeat-y (ຈັດລຽງສະເພາະໃນແນວແກນ y )
+no-repeat (ບໍ່ຈັດລຽງແນວແກນ x, y ສະແດງພາບພື້ນຫຼັງດຽວ)
+_____________________________________________________________________
+ກຳນົດຄຸນສົມບັດຂອງພື້ນຫຼັງ
+ໂດຍທົ່ວໄປພາບພື້ນຫຼັງຈະຖືກເລື່ອນຕາມການ scroll (ເລື່ອນ) ຂອງ web Browser ຖ້າຕ້ອງການຕຶງພາບພື້ນຫຼັງໃຫ້ຢູ່ກັບທີ່ສາມາດເຮັດໄດ້ໂດຍໃຊ້
+background-attachment
+
+scroll (ຄືການເລື່ອນພື້ນຫຼັງຕາມ scrollbar ແຖບເລື່ອນ)
+fixed  (ຄືການຕຶງພື້ນຫຼັງໄວ້ກັບທີ່)
+
+_____________________________________________________________________
+ກຳນົດຕຳແໜ່ງພື້ນຫຼັງ
+ສາມາດກຳນົດໄດ້ວ່າຈະເລີ່ມຕົ້ນວາງພື້ນຫຼັງທີ່ຕຳແໜ່ງໃດ ໂດຍໃຊ້ background-position 
+background-position:center right; (ກາງ ຂວາ)
+
+- left top or left center or left bottom 
+- right top or right center or right bottom 
+- center top or center center or center bottom
+_____________________________________________________________________
+Background-size ກຳນົດຂະໜາດພາບ
+auto ຄ່າເລີ່ມຕົ້ນ
+px ຫຼື %
+cover ຂະຫຍາຍພາບທັງຄວາມກວາ້ງ ຄວາມສູງເຕັມຈໍໃນອັດຕາສ່ວນເທົ່າກັນ 
+contain ຂະຫຍາຍພາບທັງຄວາມກວາ້ງ ຄວາມສູງ ຊົນກັບຕົວ Browser 
+_____________________________________________________________________
+property background 
+ิbackground : white url(image/logo.jpg) no-repeat fixed center center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+    	body{
+        background-image:url('https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHRtbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+        background-repeat:no-repeat;
+        /* background-attachment:fixed; */
+        background-position: center right;
+    }
+        div{
+            border: 5px dashed green;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+        .box-1{
+        	padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            }
+        img{
+        	border: solid 5px green;
+            width: 100px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box-3">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box-4">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box-5">
+         <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHRtbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHRtbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHRtbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+</body>
+</html>

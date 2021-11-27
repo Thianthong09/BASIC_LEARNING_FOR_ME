@@ -1,5 +1,3 @@
-package Java_Basicforme;
-
 import java.util.Scanner;
 
 public class Scanner1 {

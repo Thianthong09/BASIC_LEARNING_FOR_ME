@@ -1,7 +1,6 @@
 package Java_Basicforme;
 
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
 
 class InputNextline {
     public static void main(String[] args) {

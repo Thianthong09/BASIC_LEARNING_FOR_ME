@@ -1,0 +1,68 @@
+Border ຄືການນຳນົດເສັ້ນຂອບ ໂດຍມີຮູບແບບດັ່ງນີ້:
+border: <ຮູບແບບເສັ້ນ> <ຂະໜາດ> <ສີ>
+
+ຮູບແບບເສັ້ນ ປະກອບດ້ວຍ solid(ເສັ້ນທືບ), dotted(ແບບຈຸດ), dashed(ເສັ້ນຂີດ)
+ຂະໜາດ ຄື ຄວາມກວ້າງຂອງເສັ້ນກຳນົດເປັນຕົວເລກຕາມໜ່ວຍ
+ສີ ກຳນົດຮູບແບບຄື font ເລີຍ ເຊັ່ນ: ຊື່ສີ, rgb, hex 
+______________________________________________________________________
+ການກຳນົດຮູບແບບເສັ້ນຂອບ
+Border ຄືການນຳນົດເສັ້ນຂອບ ໂດຍມີຮູບແບບດັ່ງນີ້:
+border-style <ຮູບແບບເສັ້ນ>
+ຮູບແບບເສັ້ນ ປະກອບດ້ວຍ solid(ເສັ້ນທືບ), dotted(ແບບຈຸດ), dashed(ເສັ້ນຂີດ)
+
+border-xxx-style <ຮູບແບບເສັ້ນ>
+xxx ຄື ທິດທາງຂອງຮູບແບບເສັ້ນຂອບ
+
+______________________________________________________________________
+ຄ່າຄົງທີ່ຂອງເສັ້ນຂອບ border-width 
+ຂອບປານກາງ - medium 
+ຂອບບາງ - thin
+ຂອບໜາ - thick
+ຄ່າເລີ່ມຕົ້ນ - initial 
+ອ້າງອີງຕາມ parent element - inherit
+______________________________________________________________________
+Radius ກຳນົດຄວາມໂຄ້ງ
+border-xxx-style
+xxx ຄື ທິດທາງຂອງຮູບແບບເສັ້ນຂອບ
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+    div{
+        width: 100px;
+        height: 100px;
+    }
+    .box-1{
+        background-color: white;
+        border-color: black;
+        border-style: solid;
+        border-width: medium;
+    }
+    .box-2{
+        background-color: burlywood;
+        border: dotted 5px black;
+        border-top-color: seagreen;
+    } 
+    .box-3{
+        background-color: red;
+        border-color: rgb(rgb(0, 255, 221), rgb(128, 62, 0), rgb(0, 255, 149));
+    } 
+    .box-4{
+        background-color: green;
+        border-radius /* ລັດສະໝີ */: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box-1"></div><hr>
+    <div class="box-2"></div><hr>
+    <div class="box-3"></div><hr>
+    <div class="box-4"></div><hr>
+</body>
+</html>
+

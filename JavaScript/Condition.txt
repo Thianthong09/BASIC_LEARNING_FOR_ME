@@ -1,0 +1,23 @@
+Conditional statements are used to control which part of a script is 
+executed depending on a logical condition 
+
+const age = 25;
+if(age > 18){
+    console.log('Age is more than 18'); //ອາຍຸຫຼາຍກວ່າ 18 ປີ
+
+}else{
+    console.log('Age is less than or equal to 18');//ອາຍຸໜ້ອຍກວ່າ ຫຼືເທົ່າກັບ 18
+} 
+
+----------------------------------------
+
+ເທົ່າກັນ       Equal ===
+ບໍ່ເທົ່າກັນ      Not equal !==
+ໃຫຍ່ກວ່າ      Greater than >
+ນ້ອຍກວ່າ     Less than <
+ໃຫຍ່ກວ່າ ຫຼຶ ເທົ່າກັບ      Greater than or equal >=
+ນ້ອຍກວ່າ ຫຼື ເທົ່າກັບ      Less than or equal <=
+
+And %%
+Or ||
+Not !

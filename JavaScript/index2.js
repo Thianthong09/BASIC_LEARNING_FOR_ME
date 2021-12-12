@@ -1,4 +1,4 @@
-const name = 'THIAN';
+const name = 'THIAN'; //const ປ່ຽນຄ່າບໍ່ໄດ້
 let height = 175;
 
 let isMale = false;
@@ -42,3 +42,19 @@ number.unshift(1);
 
 //ເມັດຕອດ ລົບຄ່າ ທຳອິດ
 number.shift();
+
+//Operator
+let result = 10 + 5 * 2 / 2;
+console.log(result);
+
+
+//Condition 
+
+let password = '';
+if (password === '') {
+    console.log('Password is equired');
+} else if (password.length > 8 && password.length < 12) {
+    console.log('Password is velid');
+} else {
+    console.log('Password is invelid');
+}

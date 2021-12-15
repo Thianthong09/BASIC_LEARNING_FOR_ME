@@ -58,3 +58,26 @@ if (password === '') {
 } else {
     console.log('Password is invelid');
 }
+
+
+//Function 
+function calculateVat(money, vat) {
+    return money * vat / 100;
+}
+
+const totalvat = calculateVat(100, 7);
+console.log(totalvat);
+
+
+//For loop
+
+for (let counter = 0; counter < 10; counter++) {
+    //if(counter ===5 ) ຖ້າເທົ່າກັບ 5 ໃຫ້ຢຸດ
+    //break;
+
+    if (counter % 2 === 0) {
+        continue;
+    }
+
+    console.log(counter);
+}

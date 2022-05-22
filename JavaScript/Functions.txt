@@ -1,8 +1,0 @@
-Functions are set of statement that perform specific tasks. 
-They structure programs and reduce repetition
-ຟັງຊັນແມ່ນຊຸດຂອງຄໍາຖະແຫຼງທີ່ປະຕິບັດວຽກງານສະເພາະ. ພວກເຂົາໂຄງສ້າງໂຄງການແລະຫຼຸດຜ່ອນການຄ້າງຫ້ອງ
-
-function add(a,b){
-    return a+b;
-
-}

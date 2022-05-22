@@ -1,8 +1,0 @@
-Document Object Model (DOM) is an interface that represents 
-HTML/XML documents as a tree structure
-Document Object Model (DOM) ແມ່ນສ່ວນຕິດຕໍ່ທີ່ສະແດງເຖິງເອກະສານ HTML/XML ເປັນໂຄງສ້າງຕົ້ນໄມ້
-
-document.querySelector('input');
-document.getElementById('email');
-document.createElement('div');
-document.appendChild(element);
